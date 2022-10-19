@@ -1,8 +1,3 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=Yechan's%20Github&fontSize=90)
-____________________________________________________________________________________________________________________________________________________________
-<div align="center">
- ### 안녕하세요 은예찬입니다. 새로운 언어에 대해 흥미를 가지고 있는 신입 프론트엔드 개발자입니다
-</div>
 
 <div align="end">
  
