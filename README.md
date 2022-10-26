@@ -1,28 +1,15 @@
-
-
-
-<table border="none">
-<tr border="none">
-    <td border="none" width="25%">
-        <img src="https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png">
-    </td>
-    <td border="none" width="25%">
-     ㅇㅇ
-    </td>
-</tr>
-<tr border="none" >
-    <td align="center"><strong></strong></td>
-    <td align="center"><strong></strong></td>
-</tr>
-</table>
-
-<div>
-    <a href="https://velog.io/@leejpsd">
-        <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=Velog&logoColor=white">
-    </a>
-<a href="https://deeply-decision-e50.notion.site/Frontend-React-ff4e95b9c66f47148092c5a5913eff16">
+<div display="flex">
+ <div>
+  <img src="https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png">
+ </div>
+ <div>
+   <a href="https://velog.io/@leejpsd">
+    <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=Velog&logoColor=white">
+   </a>
+   <a href="https://deeply-decision-e50.notion.site/Frontend-React-ff4e95b9c66f47148092c5a5913eff16">
     <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
-</a>
+   </a>
+ </div>
 </div>
 
 ----
