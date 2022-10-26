@@ -22,11 +22,9 @@
 </div>
 
 ----
-<br/>
-
-<div>
  
   ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=leejpsd&show_icons=true&theme=dracula)
+  
  ----
+ 
   [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=leejpsd&layout=compact)](https://github.com/leejpsd/github-readme-stats)
-</div>
