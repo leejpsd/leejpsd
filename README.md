@@ -1,8 +1,10 @@
-<div display="flex">
- <div>
-  <img src="https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png">
- </div>
- <div>
+<table>
+<tr>
+    <td align="center" width="25%">
+     <img src="https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png">
+    </td>
+    <td align="center" width="25%">
+      <div>
    <a href="https://velog.io/@leejpsd">
     <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=Velog&logoColor=white">
    </a>
@@ -10,7 +12,10 @@
     <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
    </a>
  </div>
-</div>
+    </td>
+</tr>
+</table>
+
 
 ----
 <div align='left'>
