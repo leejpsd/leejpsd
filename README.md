@@ -12,14 +12,9 @@
 <br/>
 
 <div align="end">
- 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fleejpsd&count_bg=%23276FC6&title_bg=%235F68CA&icon=googlekeep.svg&icon_color=%23F5EBEB&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
- 
 </div>
 
 <div align="center">
- 
- <h1>:빛나는것:Front-end Stack:빛나는것:</h1>
  
 </div>
 
