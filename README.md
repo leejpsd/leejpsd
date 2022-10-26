@@ -2,6 +2,7 @@
 
 <div align='left'>
     <img src="https://img.shields.io/badge/react-282C34?style=for-the-badge&logo=react&logoColor=61DAFB">
+    <img src="https://img.shields.io/badge/JavaScript-#F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black">
     <img src="https://img.shields.io/badge/TypeScript-3178C5?style=for-the-badge&logo=TypeScript&logoColor=white">
     <img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
     <img src="https://img.shields.io/badge/Redux%20ToolKit-764ABC?style=for-the-badge&logo=redux&logoColor=white">
