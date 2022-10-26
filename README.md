@@ -4,7 +4,7 @@
 <table>
 <tr>
     <td align="center" width="25%">
-    ![KakaoTalk_Photo_2022-10-27-04-01-19](https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png)
+        <img src="https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png">
     </td>
     <td align="center" width="25%">
      ㅇㅇ
