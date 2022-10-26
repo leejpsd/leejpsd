@@ -1,10 +1,12 @@
+<div display='flex'>
+<div>
 ![KakaoTalk_Photo_2022-10-27-04-01-19](https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png)
-
-<div align='center'>
+</div>
+<div align=''>
 <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=Velog&logoColor=white">
 <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
 </div>
-    
+</div>
 ----
 <div align='left'>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white">
