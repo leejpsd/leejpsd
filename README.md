@@ -1,6 +1,7 @@
+<div>
+    ![KakaoTalk_Photo_2022-10-27-04-01-19](https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png)
+</div>
 
-
-![KakaoTalk_Photo_2022-10-27-04-01-19](https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png)
 
 <div align='right'>
     <a href="https://velog.io/@leejpsd">
@@ -8,8 +9,7 @@
     </a>
 <a href="https://deeply-decision-e50.notion.site/Frontend-React-ff4e95b9c66f47148092c5a5913eff16">
     <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
-     </a>
-<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
+</a>
 </div>
 
 ----
