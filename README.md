@@ -1,9 +1,9 @@
-<table height="300px">
+<table height="350px">
 <tr>
-    <td align="center" >
+    <td align="center"  width="25%">
      <img height="300px" width="300px" src="https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png">
     </td>
-    <td align="center" >
+    <td align="center" width="25%">
         <h1>HI</h1>
       <div>
    <a href="https://velog.io/@leejpsd">
