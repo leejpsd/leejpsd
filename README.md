@@ -1,13 +1,13 @@
 <table height="500px">
 <tr>
     <td align="center" width="25%">
-     <img src="https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png">
+     <img  width="100%" src="https://user-images.githubusercontent.com/101346918/198113768-6b8d9cec-bf6e-483b-9f9e-b236a2d71d6b.png">
     </td>
     <td align="center" width="25%">
         <h1>HI</h1>
       <div>
    <a href="https://velog.io/@leejpsd">
-    <img width="100%" src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=Velog&logoColor=white">
+    <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=Velog&logoColor=white">
    </a>
    <a href="https://deeply-decision-e50.notion.site/Frontend-React-ff4e95b9c66f47148092c5a5913eff16">
     <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
