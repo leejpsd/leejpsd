@@ -1,17 +1,5 @@
 
 <div align="end">
- 
- <a href="https://www.notion.so/1b2415a83a5f45f6a9c81cec73bce426">
-  
-   <img style="height: 60px; width: 150px;" src="https://img.shields.io/badge/Notion-334455?style=flat-square&logo=Notion&logoColor=white"/>
-  
- </a>
- 
-</div>
-
-<br/>
-
-<div align="end">
 </div>
 
 <div align="center">
