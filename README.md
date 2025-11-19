@@ -9,9 +9,6 @@
    <a href="https://velog.io/@leejpsd">
     <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=Velog&logoColor=white">
    </a>
-   <a href="https://deeply-decision-e50.notion.site/Frontend-React-ff4e95b9c66f47148092c5a5913eff16">
-    <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
-   </a>
  </div>
     </td>
 </tr>
