@@ -19,6 +19,16 @@
 
 ---
 
+
+# 🤝 Contact
+- **Email**: leejpsd@gmail.com  
+- **Velog**: https://velog.io/@leejpsd  
+- **GitHub**: https://github.com/leejpsd  
+
+<br/>
+
+---
+
 # 🛠 **Tech Stack**
 
 ### **Frontend**
@@ -120,14 +130,6 @@
 
 <br/>
 
----
-
-# 🤝 Contact
-- **Email**: leejpsd@gmail.com  
-- **Velog**: https://velog.io/@leejpsd  
-- **GitHub**: https://github.com/leejpsd  
-
-<br/>
 
 <p align="center">
   <sub>Thanks for visiting my profile! ✨</sub>
