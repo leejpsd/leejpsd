@@ -42,7 +42,7 @@
   ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=leejpsd&show_icons=true&theme=dracula)
   
  ----
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=leejpsd@gmail.com)](https://solved.ac/leejpsd@gmail.com/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=wndvy7690)](https://solved.ac/wndvy7690/)
 
  ----
  
