@@ -94,17 +94,29 @@
 
 # 🚀 Featured Projects
 
-### 🔹 **Kasina / Hoopcity Frontend**
-Next.js App Router 기반 전자상거래 플랫폼 고도화  
-(SEO, PPR, SSR, Shadow DOM, WebView 최적화 등)
+### 🔹 **Shoeprize (슈프라이즈)**  
+(Frontend 리드 · 2022~2024)  
+- Next.js App Router로 전면 마이그레이션, SSR·ISR·Streaming SSR 구조 설계  
+- React Query + fetch 캐시의 이중 데이터 계층 구성  
+- SEO·JSON-LD 정비, WebView(앱) 연동/브리지 안정화  
+→ FCP/LCP·SEO·TTFB 등 핵심 지표 대폭 개선, 신규 유입·전환률 증가
 
-### 🔹 **Shoeprize (슈프라이즈)**
-Hybrid/WebView 환경 대응, 페이지 성능 개선,  
-대규모 UI/UX 구조 재설계
+---
 
-### 🔹 **Flatten Corporate Site**
-브랜드/프로모션 전용 페이지 설계,  
-디자인 시스템 기반 반응형 구축
+### 🔹 **Kasina**  
+(Frontend 팀원 · 2023~현재)  
+- Next.js Pages Router 기반 커머스 프론트 구축  
+- Shopby + 사내 API 통합, OAuth/토큰 갱신·에러 핸들링 표준화  
+- React Query + Zustand로 데이터/UX 일관성 확보  
+→ 로그인/장바구니/결제 흐름 안정화, 오류율 감소·전환률 상승
+
+---
+
+### 🔹 **Flatten Corporate Site**  
+(Frontend 단독 담당 · 2025)  
+- Lenis + JS + CSS transform으로 스크롤 기반 인터랙션 구축  
+- 패럴랙스/모션 최적화, 리페인트 최소화 구조 설계  
+→ 브랜드 아이덴티티 중심의 경량·고품질 인터랙티브 페이지 완성
 
 <br/>
 
