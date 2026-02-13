@@ -1,13 +1,17 @@
-<!-- 프로필 헤더 -->
-<h1 align="center">Hi, I'm Eddy 👋</h1>
+<!-- 헤더 배너 -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,50:4ECDC4,100:45B7D1&height=230&section=header&text=Hi,%20I'm%20Eddy%20👋&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Frontend%20Developer%20|%20React%20·%20Next.js%20·%20TypeScript&descAlignY=55&descSize=18&descColor=ffffff" width="100%" />
+
+<!-- 타이핑 애니메이션 -->
 <p align="center">
-  <b>Frontend Developer</b><br/>
-  React · Next.js · TypeScript · UI Engineering
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=4ECDC4&center=true&vCenter=true&random=false&width=600&lines=Building+Fast+%26+Beautiful+Web+Experiences+%F0%9F%9A%80;React+%2B+Next.js+%2B+TypeScript+Engineer+%F0%9F%92%BB;Turning+Tech+into+Business+Impact+%F0%9F%93%88;CWV+73+%E2%86%92+99+%7C+SEO+76+%E2%86%92+100+%7C+CTR+%2B32%25" alt="Typing SVG" />
+  </a>
 </p>
 
 <br/>
 
 ## 🌟 About Me
+
 - **React** 기반 컴포넌트 설계·상태 관리·UI 인터랙션에 강점이 있습니다.
 - Next.js **Pages Router → App Router** 마이그레이션, SSR·ISR·CSR 렌더링 전략 설계 경험이 있습니다.
 - WebView 하이브리드 환경의 네이티브 브리지 설계와 **앱-웹 연동 안정화** 경험을 갖추고 있습니다.
@@ -18,10 +22,21 @@
 ---
 
 # 🤝 Contact
-- **Portfolio**: [eddy-dev.xyz](https://www.eddy-dev.xyz/)
-- **Email**: leejpsd@gmail.com
-- **Velog**: [velog.io/@leejpsd](https://velog.io/@leejpsd)
-- **GitHub**: [github.com/leejpsd](https://github.com/leejpsd)
+
+<p align="center">
+  <a href="https://www.eddy-dev.xyz/">
+    <img src="https://img.shields.io/badge/Portfolio-FF6B6B?style=for-the-badge&logo=googlechrome&logoColor=white" />
+  </a>
+  <a href="mailto:leejpsd@gmail.com">
+    <img src="https://img.shields.io/badge/Email-4ECDC4?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://velog.io/@leejpsd">
+    <img src="https://img.shields.io/badge/Velog-45B7D1?style=for-the-badge&logo=velog&logoColor=white" />
+  </a>
+  <a href="https://github.com/leejpsd">
+    <img src="https://img.shields.io/badge/GitHub-FF8A5C?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
 
 <br/>
 
@@ -60,26 +75,40 @@
 
 # 🚀 Featured Projects
 
-### 🔹 Shoeprize (슈프라이즈)
-> Frontend 리드 (3명) · 2022~2025 | MAU 90만, 동시접속 3만
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🔥 Shoeprize (슈프라이즈)</h3>
+      <p><b>Frontend 리드 (3명) · 2022~2025</b></p>
+      <p>MAU 90만, 동시접속 3만 | 한정판 스니커즈 플랫폼</p>
+      <ul>
+        <li>Django → Next.js 14 전면 마이그레이션</li>
+        <li>CWV 73→99 · SEO 76→100 · CTR +32%</li>
+        <li>서버 비용 54% 절감 · 이탈률 -20%</li>
+      </ul>
+    </td>
+    <td width="50%">
+      <h3>👟 Kasina (카시나)</h3>
+      <p><b>Frontend 팀원 · 2023~현재</b></p>
+      <p>프리미엄 스니커즈 커머스 플랫폼</p>
+      <ul>
+        <li>Shopby + 사내 API 통합 레이어 설계</li>
+        <li>API 실패율 -40% · 결제 전환 +7%</li>
+        <li>장애 대응 1시간→20분 단축</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <h3>🎨 Flatten Corporate Site</h3>
+      <p><b>Frontend 단독 · 2025</b> | Lenis + CSS transform 60fps 패럴랙스 | 한 달 내 기획→배포</p>
+    </td>
+  </tr>
+</table>
 
-- Django → Next.js 14 전면 마이그레이션, SSR·ISR·Streaming SSR 구조 설계
-- Core Web Vitals 73→99 · SEO 76→100 · CTR +32% · 서버 비용 54% 절감
-
-### 🔹 Kasina (카시나)
-> Frontend 팀원 · 2023~현재 | 프리미엄 스니커즈 커머스
-
-- Shopby + 사내 API 통합 레이어, OAuth/토큰 갱신·에러 핸들링 표준화
-- API 실패율 -40% · 결제 전환 +7% · 장애 대응 1시간→20분
-
-### 🔹 Flatten Corporate Site
-> Frontend 단독 · 2025
-
-- Lenis + CSS transform 기반 60fps 패럴랙스 인터랙션, 한 달 내 기획→배포
-
-<br/>
-
-👉 **프로젝트 상세는 [포트폴리오](https://www.eddy-dev.xyz/)에서 확인하실 수 있습니다.**
+<p align="center">
+  👉 <b><a href="https://www.eddy-dev.xyz/">프로젝트 상세는 포트폴리오에서 확인하실 수 있습니다</a></b>
+</p>
 
 <br/>
 
@@ -87,14 +116,20 @@
 
 # 📊 BOJ (Baekjoon Online Judge)
 
-<p align="left">
+<p align="center">
   <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=wndvy7690" />
-  <br/>
+  <br/><br/>
   <img src="http://mazandi.herokuapp.com/api?handle=wndvy7690&theme=warm" />
 </p>
 
 <br/>
 
+---
+
+<!-- 프로필 뷰 카운터 -->
 <p align="center">
-  <sub>Thanks for visiting my profile! ✨</sub>
+  <img src="https://komarev.com/ghpvc/?username=leejpsd&style=for-the-badge&color=4ECDC4&label=PROFILE+VIEWS" />
 </p>
+
+<!-- 푸터 배너 -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,50:4ECDC4,100:45B7D1&height=120&section=footer" width="100%" />
