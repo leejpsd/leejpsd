@@ -83,7 +83,32 @@
 
 <br/>
 
+---
 
+# 🔧 Side Projects
+
+### 🔹 Next.js + Redis Cache Demo &nbsp; [![Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/leejpsd/next-redis-cache-demo) [![Blog](https://img.shields.io/badge/Velog-시리즈-20C997?logo=velog)](https://velog.io/@leejpsd/Next.js-16-Redis-AWS-Self-hosting-%EC%BA%90%EC%8B%9C-%EB%B6%88%EC%9D%BC%EC%B9%98-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-1%ED%8E%B8-%EA%B0%9C%EB%85%90)
+> Next.js 16 `cacheHandlers` + Redis 통합 캐시 데모
+
+- AWS 다중 인스턴스 환경의 **캐시 불일치 문제**를 Redis 단일 저장소로 해결
+- `use cache` + `cacheTag` + `revalidateTag` 기반 Soft / Hard Stale 무효화 패턴 구현
+- 실무 ISR 캐시 전략을 코드로 재현 · 블로그 2편 시리즈로 개념~구현 정리
+
+### 🔹 Virtual Bank Transfer &nbsp; [![Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/leejpsd/virtual-bank-transfer)
+> 모바일 송금 서비스 프론트엔드 · **Vitest × RTL 101개 테스트**
+
+- 4단계 송금 플로우 (계좌 선택 → 금액 입력 → 송금 → 완료/실패) 전체 구현
+- React Query `staleTime` 차등 적용 · 섹션 단위 ErrorBoundary로 부분 장애 격리
+- 통합 → 페이지 → 훅 → 컴포넌트 계층별 **101개 테스트 케이스** 작성
+
+### 🔹 My Design System &nbsp; [![Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/leejpsd/my-design-system) [![Storybook](https://img.shields.io/badge/Storybook-Live-FF4785?logo=storybook)](https://leejpsd.github.io/my-design-system)
+> React + TypeScript 디자인 시스템 모노레포
+
+- **Turborepo + pnpm** 기반 3-레이어 패키지 구조 (`@my/tokens` → `@my/core` → `@my/react`)
+- WAI-ARIA 접근성 · 키보드 내비게이션 · 포커스 트랩 등 프로덕션 레벨 컴포넌트
+- CSS Variables 테마 (라이트/다크) · Storybook 문서화 · GitHub Actions CI/CD
+
+<br/>
 
 ---
 
