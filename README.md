@@ -14,7 +14,7 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인�
 | **Lighthouse** · 마이그레이션 | **렌더링 서버** · 비용 54%↓ | **검색 클릭** · SEO TF 3주 | **Sentry 노이즈** · 2주 |
 
 <details>
-<summary><b>🗺️ 발매 순간, 동시접속 3만의 요청이 지나가는 길 — 클릭해서 열기</b></summary>
+<summary><b>발매 순간, 동시접속 3만의 요청이 지나가는 길 — 클릭해서 열기</b></summary>
 <br/>
 
 <p align="center"><img src="assets/traffic-flow.svg" width="860" alt="발매 트래픽 아키텍처 애니메이션"/></p>
