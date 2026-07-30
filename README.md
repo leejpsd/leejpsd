@@ -1,129 +1,41 @@
-<!-- 헤더 배너 -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,50:4ECDC4,100:45B7D1&height=230&section=header&text=Hi,%20I'm%20Eddy%20👋&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Frontend%20Developer%20|%20React%20·%20Next.js%20·%20TypeScript&descAlignY=55&descSize=18&descColor=ffffff" width="100%" />
+# 이중표 · Eddy
 
-<!-- 타이핑 애니메이션 -->
-<p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=4ECDC4&center=true&vCenter=true&random=false&width=600&lines=Building+Fast+%26+Beautiful+Web+Experiences+%F0%9F%9A%80;React+%2B+Next.js+%2B+TypeScript+Engineer+%F0%9F%92%BB;Turning+Tech+into+Business+Impact+%F0%9F%93%88;CWV+73+%E2%86%92+99+%7C+SEO+76+%E2%86%92+100+%7C+CTR+%2B32%25" alt="Typing SVG" />
-  </a>
-</p>
+**사용자가 한 순간에 몰려도 실시간 UX와 성능을 지키고, 없는 도구는 직접 만들어 배포하는 프론트엔드 엔지니어**
 
-<br/>
+MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인으로 3년간 설계·운영했습니다.
+문제를 만나면 끝까지 파고, 실측으로 검증하고, 글로 남기고, 도구로 만듭니다.
 
-## 🌟 About Me
+📝 [기술 블로그 (21편)](https://www.eddy-dev.xyz/blog) · 📧 leejpsd@gmail.com
 
-- **React** 기반 컴포넌트 설계·상태 관리·UI 인터랙션에 강점이 있습니다.
-- Next.js **Pages Router → App Router** 마이그레이션, SSR·ISR·CSR 렌더링 전략 설계 경험이 있습니다.
-- WebView 하이브리드 환경의 네이티브 브리지 설계와 **앱-웹 연동 안정화** 경험을 갖추고 있습니다.
-- SEO·트래킹(GA4/GTM)·Core Web Vitals 등 **기술 개선을 비즈니스 성과로 검증**해왔습니다.
-
-<br/>
+`React` `Next.js` `TypeScript` `React Query` `Zustand` `Vitest` `MSW` `Sentry` `AWS(ECS/EC2)` `Redis`
 
 ---
 
-# 🤝 Contact
-- **Portfolio**: [eddy-dev.xyz](https://www.eddy-dev.xyz/)
-- **Email**: leejpsd@gmail.com
-- **Velog**: [velog.io/@leejpsd](https://velog.io/@leejpsd)
-- **GitHub**: [github.com/leejpsd](https://github.com/leejpsd)
+## 🔧 만들어서 배포한 것들
 
-<br/>
+| 프로젝트 | 무엇을 해결하나 |
+|---|---|
+| [**@leejpsd/nextjs-cache-handler**](https://www.npmjs.com/package/@leejpsd/nextjs-cache-handler) | 멀티 인스턴스 Next.js의 캐시·무효화를 Redis로 공유. Next 16의 두 캐시 인터페이스(`cacheHandler`/`cacheHandlers`) 모두 지원 — 선도 OSS가 "Help needed"로 둔 공백을 메움. Lua 원자화·장애 폴백·배포 격리, 실 Redis 7 통합 테스트 21 시나리오 |
+| [**next-redis-cache**](https://github.com/leejpsd/next-redis-cache) | 위 패키지의 실측 랩 — AWS ECS 2 task + ElastiCache에서 무효화 전파 평균 6.4ms, 스파이크 20,377 요청에 origin 호출 1회, 6개 렌더링 전략 비교 실측. [라이브 대시보드](http://next-redis-cache-staging-alb-1315597713.ap-southeast-2.elb.amazonaws.com/dashboard) |
+| [**typescript-react-nextjs-patterns**](https://github.com/leejpsd/typescript-react-nextjs-patterns) | AI 코딩 에이전트(Claude Code·Cursor·Codex)용 Agent Skill — 17모듈·4,000줄. 규칙을 HARD RULE/DEFAULT/SITUATIONAL로 티어링하고, 컴팩션 후 규칙 유실을 복구하는 구조까지 설계 |
+| [**shopby-mcp**](https://www.npmjs.com/package/shopby-mcp) | 검색이 없는 Shopby(NHN Commerce) API 문서를 자연어로 검색하는 MCP 서버. OpenAPI 인덱싱 + 한↔영 동의어, `npx`만으로 zero-config (npm) |
+| [**my-design-system**](https://github.com/leejpsd/my-design-system) | 접근성·테스트·문서화를 갖춘 디자인 시스템 스터디 — 토큰 3계층, WAI-ARIA, Storybook Interaction Test ([Storybook](https://leejpsd.github.io/my-design-system)) |
 
----
+## 💼 실무에서 한 것들
 
-# 🛠 Tech Stack
+**Shoeprize** — 한정판 발매정보 플랫폼 (MAU 90만 · Frontend Lead)
+- Django → Next.js 14 마이그레이션 주도, 데이터 특성별 렌더링 전략(ISR/CSR/SSG)과 `revalidateTag` 캐시 무효화 설계
+- Lighthouse 성능 점수 73→99 (LCP 8.6s→0.9s) · 렌더링/웹 서버 13→6대 (비용 54%↓)
+- SEO TF 리딩 — 3주에 검색 클릭 105%↑ (Search Console 검증)
+- 커뮤니티 웹/네이티브 경계 설계 — 읽기는 웹, 쓰기는 네이티브, refetch 없는 4단계 병합
 
-### **Frontend & Styling**
-<p>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,js,vite,threejs" />
-  <img src="https://skillicons.dev/icons?i=html,css,scss,tailwind,styledcomponents,mui" />
-</p>
+**Kasina** — 프리미엄 스니커즈 커머스 (Frontend Engineer, 전담)
+- Shopby + 사내 API 이원화 인증 설계 — race condition 중앙 제어, 만료 10분 전 선제 갱신, WebView 앱-웹 동기화
+- 일 400건 로그인 풀림을 Sentry 커스텀 계측으로 추적, 서버 측 원인을 데이터로 증명해 종결
+- 운영 중 커머스에 테스트 127개 도입 (Vitest + MSW, 돈 흐름부터 ROI 순서로)
 
-### **State · Data · Visualization**
-<p>
-  <img src="https://skillicons.dev/icons?i=redux" />
-  <img src="https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/Recoil-3578E5?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white" />
-  <img src="https://img.shields.io/badge/SWR-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/ECharts-0C5F8C?style=for-the-badge&logo=apacheecharts&logoColor=white" />
-  <img src="https://img.shields.io/badge/r3f-000000?style=for-the-badge&logo=three.js&logoColor=white" />
-</p>
-
-### **Infra · Tools**
-<p>
-  <img src="https://skillicons.dev/icons?i=vercel,cloudflare,aws,git,github,vscode" />
-  <img src="https://img.shields.io/badge/WebView-Hybrid-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/GA4/GTM-4285F4?style=for-the-badge&logo=googleanalytics&logoColor=white" />
-  <img src="https://img.shields.io/badge/motion-F7DF1E?style=for-the-badge&logo=framer&logoColor=black" />
-</p>
-
-<br/>
+**AI 실무 적용** — 노이즈로 알림을 꺼둔 프로덕션 Sentry를 Claude Code + MCP로 2주 만에 고유 이슈 90% 정리(1,463→150, 이벤트 100% 보존), 주간 트리아지 루틴 자동화
 
 ---
 
-# 🚀 Featured Projects
-
-### 🔹 Shoeprize (슈프라이즈)
-> Frontend 리드 (3명) · 2022~2025 | MAU 90만, 동시접속 3만
-
-- Django → Next.js 14 전면 마이그레이션, SSR·ISR·Streaming SSR 구조 설계
-- Core Web Vitals 73→99 · SEO 76→100 · CTR +32% · 서버 비용 54% 절감
-
-### 🔹 Kasina (카시나)
-> Frontend 팀원 · 2023~현재 | 프리미엄 스니커즈 커머스
-
-- Shopby + 사내 API 통합 레이어, OAuth/토큰 갱신·에러 핸들링 표준화
-- API 실패율 -40% · 결제 전환 +7% · 장애 대응 1시간→20분
-
-### 🔹 Flatten Corporate Site
-> Frontend 단독 · 2025
-
-- Lenis + CSS transform 기반 60fps 패럴랙스 인터랙션, 한 달 내 기획→배포
-
-<br/>
-
----
-
-# 🔧 Side Projects
-
-### 🔹 Next.js + Redis Cache Demo &nbsp; [![Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/leejpsd/next-redis-cache-demo) [![Blog](https://img.shields.io/badge/Velog-시리즈-20C997?logo=velog)](https://velog.io/@leejpsd/Next.js-16-Redis-AWS-Self-hosting-%EC%BA%90%EC%8B%9C-%EB%B6%88%EC%9D%BC%EC%B9%98-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-1%ED%8E%B8-%EA%B0%9C%EB%85%90)
-> Next.js 16 `cacheHandlers` + Redis 통합 캐시 데모
-
-- AWS 다중 인스턴스 환경의 **캐시 불일치 문제**를 Redis 단일 저장소로 해결
-- `use cache` + `cacheTag` + `revalidateTag` 기반 Soft / Hard Stale 무효화 패턴 구현
-- 실무 ISR 캐시 전략을 코드로 재현 · 블로그 2편 시리즈로 개념~구현 정리
-
-### 🔹 Virtual Bank Transfer &nbsp; [![Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/leejpsd/virtual-bank-transfer)
-> 모바일 송금 서비스 프론트엔드 · **Vitest × RTL 101개 테스트**
-
-- 4단계 송금 플로우 (계좌 선택 → 금액 입력 → 송금 → 완료/실패) 전체 구현
-- React Query `staleTime` 차등 적용 · 섹션 단위 ErrorBoundary로 부분 장애 격리
-- 통합 → 페이지 → 훅 → 컴포넌트 계층별 **101개 테스트 케이스** 작성
-
-### 🔹 My Design System &nbsp; [![Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github)](https://github.com/leejpsd/my-design-system) [![Storybook](https://img.shields.io/badge/Storybook-Live-FF4785?logo=storybook)](https://leejpsd.github.io/my-design-system)
-> React + TypeScript 디자인 시스템 모노레포
-
-- **Turborepo + pnpm** 기반 3-레이어 패키지 구조 (`@my/tokens` → `@my/core` → `@my/react`)
-- WAI-ARIA 접근성 · 키보드 내비게이션 · 포커스 트랩 등 프로덕션 레벨 컴포넌트
-- CSS Variables 테마 (라이트/다크) · Storybook 문서화 · GitHub Actions CI/CD
-
-<br/>
-
----
-
-# 📊 BOJ (Baekjoon Online Judge)
-
-<p align="left">
-  <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=wndvy7690" />
-  <br/>
-  <img src="http://mazandi.herokuapp.com/api?handle=wndvy7690&theme=warm" />
-</p>
-
-<br/>
-
----
-
-
-<!-- 푸터 배너 -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B6B,50:4ECDC4,100:45B7D1&height=120&section=footer" width="100%" />
+*재현이 안 되는 문제는 데이터를 먼저 만들고, 들은 결론은 직접 측정해 확인합니다.*
