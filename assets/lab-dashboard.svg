@@ -42,7 +42,7 @@
     <text x="612" y="128" fill="#56D364" font-size="30" font-weight="800">0.00<tspan font-size="16" font-weight="700">%</tspan>
       <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" begin="-2.6s" repeatCount="indefinite"/>
     </text>
-    <text x="612" y="156" fill="#8B949E" font-size="10.5">에러율 — 캐시 계층 안정성</text>
+    <text x="612" y="156" fill="#8B949E" font-size="10.5">에러율 · Cache Components p95 217ms</text>
   </g>
 
   <!-- ===== 타일 2행 ===== -->
@@ -56,32 +56,35 @@
     <text x="56" y="290" fill="#8B949E" font-size="10.5">Redis ping 2ms · 패키지 v0.2.0</text>
   </g>
 
-  <!-- T5 렌더링 6전략 비교 (미니 바) -->
+  <!-- T5 렌더링 6전략 LCP 비교 (와이드) -->
   <g>
-    <rect x="314" y="194" width="270" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
-    <text x="334" y="222" fill="#9DA7B3" font-size="11" font-weight="600">렌더링 6전략 LCP 비교</text>
-    <text x="334" y="252" fill="#FFA657" font-size="20" font-weight="800">공개 페이지 CSR +83%
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" begin="-2.0s" repeatCount="indefinite"/>
-    </text>
-    <text x="334" y="270" fill="#8B949E" font-size="10">vs ISR · Lighthouse 모바일 4G</text>
-    <rect x="334" y="280" height="8" rx="4" fill="#79C0FF" width="66">
-      <animate attributeName="width" values="0;66;66" keyTimes="0;0.22;1" dur="6s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="334" y="293" height="8" rx="4" fill="#FFA657" width="121">
-      <animate attributeName="width" values="0;121;121" keyTimes="0;0.3;1" dur="6s" repeatCount="indefinite"/>
-    </rect>
-    <text x="408" y="288" fill="#8B949E" font-size="9">ISR</text>
-    <text x="463" y="301" fill="#8B949E" font-size="9">CSR</text>
-  </g>
-
-  <!-- T6 use cache -->
-  <g>
-    <rect x="592" y="194" width="272" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
-    <text x="612" y="222" fill="#9DA7B3" font-size="11" font-weight="600">'use cache' + Redis (Next 16)</text>
-    <text x="612" y="262" fill="#D2A8FF" font-size="30" font-weight="800">p95 217<tspan font-size="16" font-weight="700">ms</tspan>
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" begin="-3.3s" repeatCount="indefinite"/>
-    </text>
-    <text x="612" y="290" fill="#8B949E" font-size="10.5">Cache Components 경로 · Soak 30분</text>
+    <rect x="314" y="194" width="550" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
+    <text x="334" y="220" fill="#9DA7B3" font-size="11" font-weight="600">렌더링 6전략 · 사용자 체감 LCP</text>
+    <text x="844" y="220" text-anchor="end" fill="#8B949E" font-size="9.5">Lighthouse 모바일 4G · 짧을수록 빠름</text>
+    <g font-size="10" fill="#C9D1D9">
+      <text x="334" y="240">ISR</text>
+      <text x="334" y="253.5">Hybrid</text>
+      <text x="334" y="267">SSR</text>
+      <text x="334" y="280.5">Cache Comp.</text>
+      <text x="334" y="294">BFF</text>
+      <text x="334" y="307.5" fill="#FFA657" font-weight="700">CSR</text>
+    </g>
+    <g rx="4">
+      <rect x="440" y="232"   height="9" rx="4.5" fill="#79C0FF" width="180"><animate attributeName="width" values="0;180;180" keyTimes="0;0.22;1" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="440" y="245.5" height="9" rx="4.5" fill="#56D364" width="180"><animate attributeName="width" values="0;180;180" keyTimes="0;0.24;1" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="440" y="259"   height="9" rx="4.5" fill="#8B949E" width="196" opacity="0.75"><animate attributeName="width" values="0;196;196" keyTimes="0;0.26;1" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="440" y="272.5" height="9" rx="4.5" fill="#8B949E" width="196" opacity="0.75"><animate attributeName="width" values="0;196;196" keyTimes="0;0.28;1" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="440" y="286"   height="9" rx="4.5" fill="#8B949E" width="205" opacity="0.75"><animate attributeName="width" values="0;205;205" keyTimes="0;0.30;1" dur="6s" repeatCount="indefinite"/></rect>
+      <rect x="440" y="299.5" height="9" rx="4.5" fill="#FFA657" width="330"><animate attributeName="width" values="0;330;330" keyTimes="0;0.32;1" dur="6s" repeatCount="indefinite"/></rect>
+    </g>
+    <g font-size="9" fill="#8B949E">
+      <text x="628" y="240">1,743ms</text>
+      <text x="628" y="253.5">1,746ms · 섹션별 무효화</text>
+      <text x="644" y="267">1,900ms</text>
+      <text x="644" y="280.5">1,904ms</text>
+      <text x="653" y="294">1,987ms</text>
+      <text x="778" y="307.5" fill="#FFA657" font-weight="700">3,200ms (+83%)</text>
+    </g>
   </g>
 
   <!-- 푸터 -->
