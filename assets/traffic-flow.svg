@@ -182,7 +182,7 @@
   </g>
   <g opacity="0" filter="url(#pglow)">
     <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.80;0.84;0.94;1" dur="8s" repeatCount="indefinite"/>
-    <rect x="578" y="248" width="184" height="30" rx="15" fill="#F0883E"/>
-    <text x="670" y="268" text-anchor="middle" fill="#0B0F19" font-size="12" font-weight="800">전역 무효화 · 6대 동시 반영</text>
+    <rect x="582" y="248" width="176" height="30" rx="15" fill="#F0883E"/>
+    <text x="670" y="268" text-anchor="middle" fill="#0B0F19" font-size="12" font-weight="800">멀티 인스턴스 전역 무효화</text>
   </g>
 </svg>
