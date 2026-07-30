@@ -67,8 +67,8 @@
   <text x="286" y="195" text-anchor="middle" fill="#E6EDF3" font-size="14" font-weight="700">ALB</text>
   <!-- 웹훅 도착 펄스 -->
   <circle cx="286" cy="190" r="10" fill="none" stroke="#FFA657" stroke-width="1.8" opacity="0">
-    <animate attributeName="r"       values="10;10;10;26;10" keyTimes="0;0;0.655;0.72;1" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.8;0;0"    keyTimes="0;0;0.655;0.72;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="r"       values="10;10;10;26;10" keyTimes="0;0.65;0.655;0.72;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.8;0;0"    keyTimes="0;0.65;0.655;0.72;1" dur="8s" repeatCount="indefinite"/>
   </circle>
 
   <!-- Next.js 클러스터 -->
@@ -110,16 +110,16 @@
   <text x="670" y="224" text-anchor="middle" fill="#9DA7B3" font-size="10">FETCH·PAGE 캐시 공유</text>
   <!-- 3중 파문 -->
   <circle cx="670" cy="192" r="10" fill="none" stroke="#FFA657" stroke-width="2.4" opacity="0" filter="url(#pglow2)">
-    <animate attributeName="r"       values="10;10;10;60;10" keyTimes="0;0;0.80;0.92;1" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;1;0;0"      keyTimes="0;0;0.80;0.92;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="r"       values="10;10;10;60;10" keyTimes="0;0.79;0.80;0.92;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;0;0"      keyTimes="0;0.79;0.80;0.92;1" dur="8s" repeatCount="indefinite"/>
   </circle>
   <circle cx="670" cy="192" r="10" fill="none" stroke="#FFA657" stroke-width="1.4" opacity="0">
-    <animate attributeName="r"       values="10;10;10;82;10" keyTimes="0;0;0.82;0.95;1" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.55;0;0"   keyTimes="0;0;0.82;0.95;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="r"       values="10;10;10;82;10" keyTimes="0;0.81;0.82;0.95;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.55;0;0"   keyTimes="0;0.81;0.82;0.95;1" dur="8s" repeatCount="indefinite"/>
   </circle>
   <circle cx="670" cy="192" r="10" fill="none" stroke="#FFA657" stroke-width="0.8" opacity="0">
-    <animate attributeName="r"       values="10;10;10;102;10" keyTimes="0;0;0.84;0.97;1" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0;0.3;0;0"     keyTimes="0;0;0.84;0.97;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="r"       values="10;10;10;102;10" keyTimes="0;0.83;0.84;0.97;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0.3;0;0"     keyTimes="0;0.83;0.84;0.97;1" dur="8s" repeatCount="indefinite"/>
   </circle>
 
   <!-- 백엔드 -->
