@@ -19,8 +19,8 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인�
 
 <p align="center"><img src="assets/traffic-flow.svg" width="860" alt="발매 트래픽 아키텍처 애니메이션"/></p>
 
-정적 자산은 엣지에서 끝나고, HTML·데이터는 6대가 Redis 한 곳을 보며, 원본은 캐시 미스 때만 일합니다.
-무효화가 한 대에만 도달하던 문제를 공유 CacheHandler로 풀었고, 그 경험을 [npm 패키지](https://www.npmjs.com/package/@leejpsd/nextjs-cache-handler)와 [실측 랩](https://github.com/leejpsd/next-redis-cache)으로 일반화했습니다.
+이미지·정적은 CloudFront가 엣지에서 끝내고, HTML·데이터는 ALB 뒤 6대가 Redis 한 곳을 봅니다.
+웹훅이 로드밸런서 탓에 한 대에만 도달해도 공유 CacheHandler 덕에 전 인스턴스가 같은 무효화를 봅니다 — 같은 구조를 재현한 [실측 랩](https://github.com/leejpsd/next-redis-cache)에서 무효화 전파 평균 6.4ms를 검증했고, [npm 패키지](https://www.npmjs.com/package/@leejpsd/nextjs-cache-handler)로 일반화했습니다.
 
 </details>
 
