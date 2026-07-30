@@ -1,0 +1,89 @@
+<svg viewBox="0 0 900 372" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif">
+  <defs>
+    <filter id="dsoft" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <!-- 캔버스 -->
+  <rect x="3" y="3" width="894" height="366" rx="18" fill="#0B0F19" stroke="#F0F6FC" stroke-opacity="0.10"/>
+  <ellipse cx="240" cy="140" rx="200" ry="120" fill="#BC8CFF" opacity="0.05" filter="url(#dsoft)"/>
+  <ellipse cx="700" cy="240" rx="180" ry="120" fill="#58A6FF" opacity="0.05" filter="url(#dsoft)"/>
+
+  <!-- 타이틀 -->
+  <text x="36" y="42" fill="#E6EDF3" font-size="13.5" font-weight="700" letter-spacing="1">실측 대시보드 <tspan fill="#8B949E" font-size="11" font-weight="600">· AWS ECS Fargate 2 task + ElastiCache</tspan></text>
+  <text x="864" y="42" text-anchor="end" fill="#8B949E" font-size="10.5">k6 · Lighthouse · 계측 코드 공개</text>
+
+  <!-- ===== 타일 1행 ===== -->
+  <!-- T1 무효화 전파 -->
+  <g>
+    <rect x="36" y="60" width="270" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
+    <text x="56" y="88" fill="#9DA7B3" font-size="11" font-weight="600">무효화 전파 (revalidateTag)</text>
+    <text x="56" y="128" fill="#D2A8FF" font-size="30" font-weight="800">6.4<tspan font-size="16" font-weight="700">ms</tspan>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="56" y="156" fill="#8B949E" font-size="10.5">2개 태스크 동시 계측 · A/B 편차 0ms</text>
+  </g>
+
+  <!-- T2 스파이크 -->
+  <g>
+    <rect x="314" y="60" width="270" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
+    <text x="334" y="88" fill="#9DA7B3" font-size="11" font-weight="600">발매 스파이크 재현 (k6)</text>
+    <text x="334" y="128" fill="#79C0FF" font-size="30" font-weight="800">20,377<tspan font-size="14" font-weight="700"> req</tspan>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" begin="-1.3s" repeatCount="indefinite"/>
+    </text>
+    <text x="334" y="156" fill="#8B949E" font-size="10.5">origin 호출 1회 고정 — 스탬피드 방어</text>
+  </g>
+
+  <!-- T3 Soak -->
+  <g>
+    <rect x="592" y="60" width="272" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
+    <text x="612" y="88" fill="#9DA7B3" font-size="11" font-weight="600">지속 부하 Soak 30분</text>
+    <text x="612" y="128" fill="#56D364" font-size="30" font-weight="800">0.00<tspan font-size="16" font-weight="700">%</tspan>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" begin="-2.6s" repeatCount="indefinite"/>
+    </text>
+    <text x="612" y="156" fill="#8B949E" font-size="10.5">에러율 — 캐시 계층 안정성</text>
+  </g>
+
+  <!-- ===== 타일 2행 ===== -->
+  <!-- T4 24h 라이브 soak -->
+  <g>
+    <rect x="36" y="194" width="270" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
+    <text x="56" y="222" fill="#9DA7B3" font-size="11" font-weight="600">24h 라이브 트래픽 soak</text>
+    <text x="56" y="262" fill="#56D364" font-size="26" font-weight="800">0 err · 0 leak
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" begin="-0.6s" repeatCount="indefinite"/>
+    </text>
+    <text x="56" y="290" fill="#8B949E" font-size="10.5">Redis ping 2ms · 패키지 v0.2.0</text>
+  </g>
+
+  <!-- T5 렌더링 6전략 비교 (미니 바) -->
+  <g>
+    <rect x="314" y="194" width="270" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
+    <text x="334" y="222" fill="#9DA7B3" font-size="11" font-weight="600">렌더링 6전략 LCP 비교</text>
+    <text x="334" y="252" fill="#FFA657" font-size="20" font-weight="800">공개 페이지 CSR +83%
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" begin="-2.0s" repeatCount="indefinite"/>
+    </text>
+    <text x="334" y="270" fill="#8B949E" font-size="10">vs ISR · Lighthouse 모바일 4G</text>
+    <rect x="334" y="280" height="8" rx="4" fill="#79C0FF" width="66">
+      <animate attributeName="width" values="0;66;66" keyTimes="0;0.22;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="334" y="293" height="8" rx="4" fill="#FFA657" width="121">
+      <animate attributeName="width" values="0;121;121" keyTimes="0;0.3;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="408" y="288" fill="#8B949E" font-size="9">ISR</text>
+    <text x="463" y="301" fill="#8B949E" font-size="9">CSR</text>
+  </g>
+
+  <!-- T6 use cache -->
+  <g>
+    <rect x="592" y="194" width="272" height="118" rx="14" fill="#F0F6FC" fill-opacity="0.03" stroke="#F0F6FC" stroke-opacity="0.16" stroke-width="1.2"/>
+    <text x="612" y="222" fill="#9DA7B3" font-size="11" font-weight="600">'use cache' + Redis (Next 16)</text>
+    <text x="612" y="262" fill="#D2A8FF" font-size="30" font-weight="800">p95 217<tspan font-size="16" font-weight="700">ms</tspan>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" begin="-3.3s" repeatCount="indefinite"/>
+    </text>
+    <text x="612" y="290" fill="#8B949E" font-size="10.5">Cache Components 경로 · Soak 30분</text>
+  </g>
+
+  <!-- 푸터 -->
+  <text x="36" y="344" fill="#8B949E" font-size="10.5">검증을 마친 라이브 인프라(월 $98)는 종료 — 수치·시나리오·계측 코드는 저장소와 블로그 4부작에 기록</text>
+</svg>
