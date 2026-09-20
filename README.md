@@ -39,19 +39,6 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인�
 
 ## 오픈소스 기여
 
-<details>
-<summary><b>npm 패키지와 Next.js 기여가 같은 문제를 다룬다 — 클릭해서 열기</b></summary>
-<br/>
-
-<p align="center"><img src="assets/nextjs-cache-map.png" width="900" alt="Next.js 16의 두 캐시 인터페이스를 Redis 하나로 공유하는 구조"/></p>
-
-Next.js 16은 페이지 캐시(`cacheHandler`)와 `'use cache'` 계열(`cacheHandlers`)을 별도 인터페이스로 받습니다.
-인스턴스를 여러 대 띄우면 둘 다 한 곳을 봐야 무효화가 모든 인스턴스에 닿습니다.
-그 구현을 패키지로 만들고, 같은 구조를 다루는 공식 예제의 런타임 버그를 고쳤습니다.
-
-</details>
-
-
 **[vercel/next.js](https://github.com/vercel/next.js)** — 머지된 PR 2건
 
 | PR | 무엇을 고쳤나 | 반영된 곳 |
