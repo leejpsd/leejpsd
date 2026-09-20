@@ -37,15 +37,36 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인�
 
 ---
 
-## 만들어서 배포한 것들
+## 오픈소스 기여
+
+**[vercel/next.js](https://github.com/vercel/next.js)** — 머지된 PR 2건
+
+| PR | 무엇을 고쳤나 | 반영된 곳 |
+|---|---|---|
+| [**#98716**](https://github.com/vercel/next.js/pull/98716) | 공식 Redis 캐시 핸들러 예제의 런타임 버그 3건 — 요청마다 새로 열려 누수되는 Redis 연결, Redis가 죽으면 모든 요청이 멈추는 문제, 한 페이지에서 무효화해도 다른 페이지 캐시가 그대로 남는 문제. 메인테이너가 8개 항목을 직접 검증하고 머지 | [`remote-cache-handler.js`](https://github.com/vercel/next.js/blob/canary/examples/cache-handler-redis/remote-cache-handler.js) · [`cache-handler.js`](https://github.com/vercel/next.js/blob/canary/examples/cache-handler-redis/cache-handler.js) |
+| [**#96536**](https://github.com/vercel/next.js/pull/96536) | 어댑터 문서에 빠져 있던 `assetsHashes`·`routing.middlewareMatchers` 문서화 — 직접 어댑터를 만들다 발견 | [output-types](https://nextjs.org/docs/app/api-reference/adapters/output-types) · [routing-information](https://nextjs.org/docs/app/api-reference/adapters/routing-information) |
+
+## npm 패키지
+
+| 패키지 | 무엇을 해결하나 |
+|---|---|
+| [**@leejpsd/nextjs-cache-handler**](https://www.npmjs.com/package/@leejpsd/nextjs-cache-handler) | 멀티 인스턴스 Next.js의 캐시·무효화를 Redis로 공유. Next 16의 두 캐시 인터페이스(`cacheHandler`/`cacheHandlers`) 모두 지원 — 선도 OSS가 "Help needed"로 둔 공백을 메움. Lua 원자화·장애 폴백·배포 격리, 실 Redis 7 통합 테스트 21 시나리오 |
+| [**shopby-mcp**](https://www.npmjs.com/package/shopby-mcp) | 검색이 없는 Shopby(NHN Commerce) API 문서를 자연어로 검색하는 MCP 서버. OpenAPI 인덱싱 + 한↔영 동의어, `npx`만으로 zero-config |
+
+## 만든 것들
 
 | 프로젝트 | 무엇을 해결하나 |
 |---|---|
-| [**@leejpsd/nextjs-cache-handler**](https://www.npmjs.com/package/@leejpsd/nextjs-cache-handler) | 멀티 인스턴스 Next.js의 캐시·무효화를 Redis로 공유. Next 16의 두 캐시 인터페이스(`cacheHandler`/`cacheHandlers`) 모두 지원 — 선도 OSS가 "Help needed"로 둔 공백을 메움. Lua 원자화·장애 폴백·배포 격리, 실 Redis 7 통합 테스트 21 시나리오 |
 | [**next-redis-cache**](https://github.com/leejpsd/next-redis-cache) | 위 패키지의 실측 랩 — AWS ECS 2 task + ElastiCache에서 무효화 전파 평균 6.4ms, 스파이크 20,377 요청에 origin 호출 1회, 6개 렌더링 전략 비교 실측. 실측 요약은 위 대시보드 참조 |
 | [**typescript-react-nextjs-patterns**](https://github.com/leejpsd/typescript-react-nextjs-patterns) | AI 코딩 에이전트용 Agent Skill — 17모듈·4,000줄. 규칙을 HARD RULE/DEFAULT/SITUATIONAL로 티어링하고, 컴팩션 후 규칙 유실을 복구하는 구조까지 설계 |
-| [**shopby-mcp**](https://www.npmjs.com/package/shopby-mcp) | 검색이 없는 Shopby(NHN Commerce) API 문서를 자연어로 검색하는 MCP 서버. OpenAPI 인덱싱 + 한↔영 동의어, `npx`만으로 zero-config |
 | [**my-design-system**](https://github.com/leejpsd/my-design-system) | 접근성·테스트·문서화를 갖춘 디자인 시스템 스터디 — 토큰 3계층, WAI-ARIA, Storybook Interaction Test ([Storybook](https://leejpsd.github.io/my-design-system)) |
+
+## 운영 중인 서비스
+
+| 서비스 | 무엇을 해결하나 |
+|---|---|
+| [**KnittyCat**](https://www.knittycat.kr) | 사진을 색상 격자 도안으로 바꿔 주는 무료 도구 (뜨개·십자수·비즈아트). 터치 드로잉 편집기, 도안 크기 조절, A4 인쇄용 PDF·PNG 내보내기, 승인제 유저 갤러리, 한/영 이중 라우트, 가이드 20편. 개인정보처리방침·이용약관을 갖추고 GA4로 퍼널과 광고 노출을 계측하며 운영 중 |
+| [**먼저먹어요**](https://minion.toss.im/3Pu8B62l) (앱인토스 미니앱) | 소비기한을 찍어 두면 버리기 전에 알려 주는 냉장고 관리 앱. 영수증 한 장으로 여러 식품 일괄 등록, 임박 순 정렬, 다 먹으면 장보기 목록으로 연결. 토스 로그인(mTLS), 기능성 푸시 알림, 리워드 광고, Supabase RLS |
 
 ## 실무에서 한 것들
 
