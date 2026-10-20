@@ -11,7 +11,7 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인�
 
 |  73 → 99  |  13 → 6대  |  105%↑  |  90%↓  |
 | :---: | :---: | :---: | :---: |
-| **Lighthouse** · 마이그레이션 | **렌더링 서버** · 비용 54%↓ | **검색 클릭** · SEO TF 3주 | **Sentry 노이즈** · 2주 |
+| **Lighthouse** · 마이그레이션 | **렌더링 서버** · 대수 54%↓ | **검색 클릭** · SEO TF 3주 | **Sentry 노이즈** · 2주 |
 
 <details>
 <summary><b>발매 순간, 동시접속 3만의 요청이 지나가는 길 — 클릭해서 열기</b></summary>
@@ -39,12 +39,13 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인�
 
 ## 오픈소스 기여
 
-**[vercel/next.js](https://github.com/vercel/next.js)** — 머지된 PR 2건
+**[vercel/next.js](https://github.com/vercel/next.js)** — 머지된 PR 3건
 
 | PR | 무엇을 고쳤나 | 반영된 곳 |
 |---|---|---|
 | [**#98716**](https://github.com/vercel/next.js/pull/98716) | 공식 Redis 캐시 핸들러 예제의 런타임 버그 3건 — 요청마다 새로 열려 누수되는 Redis 연결, Redis가 죽으면 모든 요청이 멈추는 문제, 한 페이지에서 무효화해도 다른 페이지 캐시가 그대로 남는 문제. 메인테이너가 8개 항목을 직접 검증하고 머지 | [`remote-cache-handler.js`](https://github.com/vercel/next.js/blob/canary/examples/cache-handler-redis/remote-cache-handler.js) · [`cache-handler.js`](https://github.com/vercel/next.js/blob/canary/examples/cache-handler-redis/cache-handler.js) |
 | [**#96536**](https://github.com/vercel/next.js/pull/96536) | 어댑터 문서에 빠져 있던 `assetsHashes`·`routing.middlewareMatchers` 문서화 — 직접 어댑터를 만들다 발견 | [output-types](https://nextjs.org/docs/app/api-reference/adapters/output-types) · [routing-information](https://nextjs.org/docs/app/api-reference/adapters/routing-information) |
+| [**#96517**](https://github.com/vercel/next.js/pull/96517) | `cacheHandlers` 문서의 빈칸 2개 — `updateTags()`의 `durations`가 "즉시 무효화"와 "stale 뒤 만료"를 가르는 신호라는 설명이 없어 핸들러가 둘을 똑같이 처리하면 stale-while-revalidate가 사라지는 문제, Redis 예제가 만료 없음(`Infinity`) 항목의 TTL을 그대로 넘겨 저장이 실패하던 문제 | [cacheHandlers](https://nextjs.org/docs/app/api-reference/config/next-config-js/cacheHandlers) |
 
 ## npm 패키지
 
@@ -67,13 +68,13 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인�
 |---|---|
 | [**KnittyCat**](https://www.knittycat.kr) | 사진을 색상 격자 도안으로 바꿔 주는 무료 도구 (뜨개·십자수·비즈아트). 터치 드로잉 편집기, 도안 크기 조절, A4 인쇄용 PDF·PNG 내보내기, 승인제 유저 갤러리, 한/영 이중 라우트, 가이드 20편. 개인정보처리방침·이용약관을 갖추고 GA4로 퍼널과 광고 노출을 계측하며 운영 중 |
 | [**먼저먹어요**](https://minion.toss.im/3Pu8B62l) (앱인토스 미니앱) | 소비기한을 찍어 두면 버리기 전에 알려 주는 냉장고 관리 앱. 영수증 한 장으로 여러 식품 일괄 등록, 임박 순 정렬, 다 먹으면 장보기 목록으로 연결. 토스 로그인(mTLS), 기능성 푸시 알림, 리워드 광고, Supabase RLS |
-| [**Civic Lab**](https://civic-lab-omega.vercel.app) `AI Championship 2026 출품 · 심사 중` | 정책을 실제로 시행하기 전에 AI 시뮬레이션으로 사각지대를 먼저 찾는 도구. KOSIS 공공통계로 만든 가상 인구 150명 대상, 자격 판정·집계·사각지대 탐지는 코드가 확정하고 LLM은 개별 판단과 서술만 맡음. 튜닝에 쓰지 않은 실존 정책으로 blind 백테스트 — 사후 지적 4건 중 3건을 시행 전 문구만으로 재현 ([리포트](https://civic-lab-omega.vercel.app/backtest)) |
+| [**Civic Lab**](https://civic-lab-omega.vercel.app) `AI Championship 2026 본선 진출 · 출품 1,389개 중 최종 20팀` | 정책을 실제로 시행하기 전에 AI 시뮬레이션으로 사각지대를 먼저 찾는 도구. KOSIS 공공통계로 만든 가상 인구 150명 대상, 자격 판정·집계·사각지대 탐지는 코드가 확정하고 LLM은 개별 판단과 서술만 맡음. 튜닝에 쓰지 않은 실존 정책으로 blind 백테스트 — 사후 지적 4건 중 3건을 시행 전 문구만으로 재현 ([리포트](https://civic-lab-omega.vercel.app/backtest)) |
 
 ## 실무에서 한 것들
 
 **Shoeprize** — 한정판 발매정보 플랫폼 (MAU 90만 · Frontend Lead)
 - Django → Next.js 14 마이그레이션 주도, 데이터 특성별 렌더링 전략(ISR/CSR/SSG)과 `revalidateTag` 캐시 무효화 설계
-- Lighthouse 성능 점수 73→99 (LCP 8.6s→0.9s) · 렌더링/웹 서버 13→6대 (비용 54%↓)
+- Lighthouse 성능 점수 73→99 (LCP 8.6s→0.9s) · 렌더링/웹 서버 13→6대 (대수 54%↓)
 - SEO TF 리딩 — 3주에 검색 클릭 105%↑ (Search Console 검증)
 - 커뮤니티 웹/네이티브 경계 설계 — 읽기는 웹, 쓰기는 네이티브, refetch 없는 4단계 병합
 
