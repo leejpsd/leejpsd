@@ -5,7 +5,7 @@
 MAU 90만 스니커즈 발매 플랫폼과 커머스를 4년 가까이 설계·운영했습니다.
 문제를 만나면 끝까지 파고, 실측으로 검증하고, 글로 남기고, 도구로 만듭니다.
 
-[기술 블로그 (21편)](https://www.eddy-dev.xyz/blog) · leejpsd@gmail.com
+[기술 블로그](https://www.eddy-dev.xyz/blog) · leejpsd@gmail.com
 
 `React` `Next.js` `TypeScript` `React Query` `Zustand` `Vitest` `MSW` `Sentry` `AWS(ECS/EC2)` `Redis`
 
