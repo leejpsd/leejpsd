@@ -2,7 +2,7 @@
 
 **사용자가 한 순간에 몰려도 실시간 UX와 성능을 지키고, 없는 도구는 직접 만들어 배포하는 프론트엔드 엔지니어**
 
-MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인으로 3년간 설계·운영했습니다.
+MAU 90만 스니커즈 발매 플랫폼과 커머스를 4년 가까이 설계·운영했습니다.
 문제를 만나면 끝까지 파고, 실측으로 검증하고, 글로 남기고, 도구로 만듭니다.
 
 [기술 블로그 (21편)](https://www.eddy-dev.xyz/blog) · leejpsd@gmail.com
@@ -72,16 +72,16 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 프론트엔드 1~3인�
 
 ## 실무에서 한 것들
 
-**Shoeprize** — 한정판 발매정보 플랫폼 (MAU 90만 · Frontend Lead)
+**Shoeprize** — 한정판 발매정보 플랫폼 (MAU 90만 · Frontend Developer, 2024 마이그레이션 리드)
 - Django → Next.js 14 마이그레이션 주도, 데이터 특성별 렌더링 전략(ISR/CSR/SSG)과 `revalidateTag` 캐시 무효화 설계
 - Lighthouse 성능 점수 73→99 (LCP 8.6s→0.9s) · 렌더링/웹 서버 13→6대 (대수 54%↓)
-- SEO TF 리딩 — 3주에 검색 클릭 105%↑ (Search Console 검증)
+- SEO TF를 꾸려 3주에 검색 클릭 105%↑ (Search Console 검증)
 - 커뮤니티 웹/네이티브 경계 설계 — 읽기는 웹, 쓰기는 네이티브, refetch 없는 4단계 병합
 
-**Kasina** — 프리미엄 스니커즈 커머스 (Frontend Engineer, 전담)
-- Shopby + 사내 API 이원화 인증 설계 — race condition 중앙 제어, 만료 10분 전 선제 갱신, WebView 앱-웹 동기화
+**Kasina** — 브랜드 편집샵 커머스 (Frontend Engineer, 전담)
+- Shopby + 사내 API 이원화 인증 설계 — 첫 401만 refresh하고 나머지는 기다렸다 재시도, 거부된 refresh는 재시도에서 제외, WebView 앱-웹 동기화
 - 일 400건 로그인 풀림을 Sentry 커스텀 계측으로 추적, 서버 측 원인을 데이터로 증명해 종결
-- 운영 중 커머스에 테스트 127개 도입 (Vitest + MSW, 돈 흐름부터 ROI 순서로)
+- 운영 중 커머스에 테스트 127개 작성 (Vitest + MSW, 돈 흐름부터 리스크 순서로)
 
 **AI 실무 적용** — 노이즈로 알림을 꺼둔 프로덕션 Sentry를 Claude Code + MCP로 2주 만에 고유 이슈 90% 정리(1,463→150, 이벤트 100% 보존), 주간 트리아지 루틴 자동화
 
