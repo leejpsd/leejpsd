@@ -78,7 +78,7 @@ MAU 90만 스니커즈 발매 플랫폼과 커머스를 4년 가까이 설계·�
 - SEO TF를 꾸려 3주에 검색 클릭 105%↑ (Search Console 검증)
 - 커뮤니티 웹/네이티브 경계 설계 — 읽기는 웹, 쓰기는 네이티브, refetch 없는 4단계 병합
 
-**Kasina** — 브랜드 편집샵 커머스 (Frontend Engineer, 전담)
+**Kasina** — 브랜드 편집샵 커머스 (Frontend Engineer)
 - Shopby + 사내 API 이원화 인증 설계 — 첫 401만 refresh하고 나머지는 기다렸다 재시도, 거부된 refresh는 재시도에서 제외, WebView 앱-웹 동기화
 - 일 400건 로그인 풀림을 Sentry 커스텀 계측으로 추적, 서버 측 원인을 데이터로 증명해 종결
 - 운영 중 커머스에 테스트 127개 작성 (Vitest + MSW, 돈 흐름부터 리스크 순서로)
